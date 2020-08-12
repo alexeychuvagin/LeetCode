@@ -19,6 +19,9 @@ namespace LeetCode.Problems
             Assert.Equal(result, Solution(nums, target));
         }
 
+        /// <summary>
+        /// Complexity O(n^2)
+        /// </summary>
         private int[] Solution(int[] nums, int target)
         {
             int i = 0;

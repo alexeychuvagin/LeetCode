@@ -23,6 +23,7 @@ namespace LeetCode.Problems
         [InlineData("dvdf", 3)]
         public void Test(string input, int output)
         {
+            Assert.Equal(output, Solution(input));
             Assert.Equal(output, Solution2(input));
         }
 
