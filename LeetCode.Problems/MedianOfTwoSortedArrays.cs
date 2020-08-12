@@ -20,81 +20,48 @@ namespace LeetCode.Problems
             Assert.Equal(result, Solution(nums1, nums2));
         }
 
-        private double Solution(int[] nums1, int[] nums2)
-        {
-            var iterator = new IntegerArrayCollectionIterator(nums1, nums2);
-            var center = Math.Ceiling(iterator.Length / 2D);
-            
-            while (iterator.MoveNext())
-            {
-                if (iterator.CurrentPosition == center)
-                    break;
-            }
-
-            double result = iterator.Current;
-
-            if (iterator.Length % 2 == 0)
-            {
-                iterator.MoveNext();
-                result = (result + iterator.Current) / 2;
-            }
-
-            return result;
-        }
-
         /// <summary>
         /// Complexity O(log(n+m))
         /// </summary>
-        private class IntegerArrayCollectionIterator
+        private double Solution(int[] nums1, int[] nums2)
         {
-            private int _pos1 = 0;
-            private readonly int[] _nums1;
+            var pos1 = 0;
+            var pos2 = 0;
+            var curPos = 0;
+            var length = nums1.Length + nums2.Length;
+            var center = Math.Ceiling(length / 2D);
+            double currentValue = 0;
 
-            private int _pos2 = 0;
-            private readonly int[] _nums2;
-
-            public readonly int Length;
-
-            public int CurrentPosition => (_pos1 + _pos2);
-
-            private int _current = 0;
-
-            public int Current
+            while (curPos < center)
             {
-                get
+                if (pos2 >= nums2.Length || (pos1 < nums1.Length && nums1[pos1] < nums2[pos2]))
                 {
-                    if (CurrentPosition == 0)
-                        throw new Exception();
-
-                    return _current;
-                }
-            }
-
-            public IntegerArrayCollectionIterator(int[] nums1, int[] nums2)
-            {
-                _nums1 = nums1;
-                _nums2 = nums2;
-                Length = _nums1.Length + _nums2.Length;
-            }
-
-            public bool MoveNext()
-            {
-                if (CurrentPosition > Length)
-                    return false;
-
-                if (_pos2 >= _nums2.Length || (_pos1 < _nums1.Length && _nums1[_pos1] < _nums2[_pos2]))
-                {
-                    _current = _nums1[_pos1];
-                    _pos1++;
+                    currentValue = nums1[pos1];
+                    pos1++;
                 }
                 else
                 {
-                    _current = _nums2[_pos2];
-                    _pos2++;
+                    currentValue = nums2[pos2];
+                    pos2++;
                 }
 
-                return true;
+                curPos = pos1 + pos2;
             }
+
+            if (length % 2 == 0)
+            {
+                var nextValue = int.MaxValue;
+
+                if (pos1 < nums1.Length)
+                    nextValue = nums1[pos1];
+
+                if (pos2 < nums2.Length)
+                    nextValue = Math.Min(nextValue, nums2[pos2]);
+
+                currentValue = (currentValue + nextValue) / 2;
+            }
+
+            return currentValue;
         }
     }
 }
