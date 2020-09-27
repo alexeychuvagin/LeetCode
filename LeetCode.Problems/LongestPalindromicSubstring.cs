@@ -1,5 +1,4 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
 
 namespace LeetCode.Problems
 {
@@ -12,9 +11,11 @@ namespace LeetCode.Problems
     {
         [Theory]
         [InlineData("babad", "bab")]
-        //[InlineData("cbbd", "bb")]
-        //[InlineData("a", "a")]
-        //[InlineData("aaaa", "aaaa")]
+        [InlineData("cbbd", "bb")]
+        [InlineData("a", "a")]
+        [InlineData("bb", "bb")]
+        [InlineData("ccd", "cc")]
+        [InlineData("aaaa", "aaaa")]
         public void Test(string input, string output)
         {
             Assert.Equal(output, Solution(input));
@@ -22,13 +23,9 @@ namespace LeetCode.Problems
 
         public string Solution(string s)
         {
-            if (s.Length < 2)
-                return s;
-
             var result = string.Empty;
-            var pos = 0;
 
-            while (pos < s.Length)
+            for (var pos = 0; pos < s.Length; pos++)
             {
                 int even_left = pos;
                 int odd_left = pos - 1;
@@ -62,8 +59,6 @@ namespace LeetCode.Problems
 
                 if (right - left > result.Length)
                     result = s[left..right];
-
-                pos++;
             }
 
             return result;
