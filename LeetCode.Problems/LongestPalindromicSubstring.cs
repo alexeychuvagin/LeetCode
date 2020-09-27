@@ -22,44 +22,41 @@ namespace LeetCode.Problems
 
         public string Solution(string s)
         {
+            if (s.Length < 2)
+                return s;
+
             var result = string.Empty;
             var pos = 0;
 
             while (pos < s.Length)
             {
-                int m_left = pos;
-                int s_left = pos - 1;
+                int even_left = pos;
+                int odd_left = pos - 1;
                 int left = pos;
                 int right = pos + 1;
 
-                var mirror = true;
-                var symmetric = true;
+                var even = true;
+                var odd = true;
 
                 while (right < s.Length)
                 {
                     var isEqual = false;
 
-                    if (mirror)
+                    if (even && even_left >= 0 && s[even_left].Equals(s[right]))
                     {
-                        if (m_left >= 0 && s[m_left].Equals(s[right]))
-                        {
-                            isEqual = true;
-                            left = m_left;
-                            m_left--;
-                        }
-                        else mirror = false;
+                        isEqual = true;
+                        left = even_left;
+                        even_left--;
                     }
+                    else even = false;
 
-                    if (symmetric)
+                    if (odd && odd_left >= 0 && s[odd_left].Equals(s[right]))
                     {
-                        if (s_left >= 0 && s[s_left].Equals(s[right]))
-                        {
-                            isEqual = true;
-                            left = s_left;
-                            s_left--;
-                        }
-                        else symmetric = false;
+                        isEqual = true;
+                        left = odd_left;
+                        odd_left--;
                     }
+                    else odd = false;
 
                     if (isEqual) right++;
                     else break;
