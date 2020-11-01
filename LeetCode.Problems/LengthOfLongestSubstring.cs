@@ -43,11 +43,10 @@ namespace LeetCode.Problems
                 if (dict.TryGetValue(key, out var value) && value >= startPos)
                 {
                     result = Math.Max(result, pos - startPos);
-
                     startPos = dict[key] + 1;
-                    dict[key] = pos;
                 }
-                else dict[key] = pos;
+                
+                dict[key] = pos;
             }
 
             return Math.Max(result, s.Length - startPos);
