@@ -19,6 +19,7 @@ namespace LeetCode.Problems
     /// s consists of English letters (lower-case and upper-case), ',' and '.'
     /// 1 <= numRows <= 1000
     /// </remarks>
+    /// <remarks>Medium</remarks>
     /// <seealso cref="https://leetcode.com/problems/zigzag-conversion/"/>
     public sealed class ZigZagConversion
     {
