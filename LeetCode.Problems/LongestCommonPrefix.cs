@@ -35,19 +35,19 @@ namespace LeetCode.Problems
             if (strs.Length == 1)
                 return strs[0];
 
-            var result = strs[0];
+            var prefix = strs[0];
 
             for (var i = 1; i < strs.Length; i++)
             {
-                while (strs[i].IndexOf(result, StringComparison.InvariantCultureIgnoreCase) != 0)
+                while (strs[i].IndexOf(prefix, StringComparison.InvariantCultureIgnoreCase) != 0)
                 {
-                    result = result.Substring(0, result.Length - 1);
-                    if (result.Equals(string.Empty))
+                    prefix = prefix.Substring(0, prefix.Length - 1);
+                    if (prefix.Equals(string.Empty))
                         return string.Empty;
                 }
             }
 
-            return result;
+            return prefix;
         }
 
         public string VerticalScanning(string[] strs)
