@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using System.Net.WebSockets;
 using Xunit;
 
 namespace LeetCode.Problems
@@ -13,15 +13,27 @@ namespace LeetCode.Problems
     /// <seealso cref="https://leetcode.com/problems/longest-common-prefix/"/>
     public sealed class LongestCommonPrefix
     {
+        public static IEnumerable<object[]> TestCases =>
+            new List<object[]>()
+            {
+                new object[] { new[] {"flower", "flow", "flight"}, "fl" },
+                new object[] { new[] {"dog", "racecar", "car"}, "" }
+            };
+
         [Theory]
-        [InlineData(new[] {"flower", "flow", "flight"}, "fl")]
-        [InlineData(new[] {"dog", "racecar", "car"}, "")] // There is no common prefix among the input strings.
-        public void Test(string[] input, string output)
-        {
-            Assert.Equal(output, HorizontalScanning(input));
-            Assert.Equal(output, VerticalScanning(input));
-            Assert.Equal(output, BinarySearch(input));
-        }
+        [MemberData(nameof(TestCases))]
+        public void HorizontalScanningTest(string[] input, string output)
+            => Assert.Equal(output, HorizontalScanning(input));
+
+        [Theory]
+        [MemberData(nameof(TestCases))]
+        public void VerticalScanningTest(string[] input, string output)
+            => Assert.Equal(output, VerticalScanning(input));
+
+        [Theory]
+        [MemberData(nameof(TestCases))]
+        public void BinarySearchTest(string[] input, string output)
+            => Assert.Equal(output, BinarySearch(input));
 
         /// <summary>
         /// Complexity O(S) where S is the sum of letters in all strings.
