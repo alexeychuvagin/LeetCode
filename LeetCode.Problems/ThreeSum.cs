@@ -65,6 +65,9 @@ namespace LeetCode.Problems
 
             for (var i = 0; i < nums.Length - 2; i++)
             {
+                if (i > 0 && nums[i] == nums[i-1])
+                    continue;
+
                 var j = i + 1;
                 var k = nums.Length - 1;
 
