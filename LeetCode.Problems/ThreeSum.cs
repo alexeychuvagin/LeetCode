@@ -14,15 +14,14 @@ namespace LeetCode.Problems
     /// <seealso cref="https://leetcode.com/problems/3sum/"/>
     public sealed class ThreeSum
     {
-        public static IEnumerable<object[]> TestCases =>
-            new List<object[]>()
+        public static IEnumerable<object[]> TestCases()
+        {
+            yield return new object[]
             {
-                new object[]
-                {
-                    new[] {-1, 0, 1, 2, -1, -4},
-                    new[] {new[] {-1, -1, 2}, new[] {-1, 0, 1}}
-                }
+                new[] {-1, 0, 1, 2, -1, -4},
+                new[] {new[] {-1, -1, 2}, new[] {-1, 0, 1}}
             };
+        }
 
         [Theory]
         [MemberData(nameof(TestCases))]
@@ -67,6 +66,9 @@ namespace LeetCode.Problems
             {
                 if (i > 0 && nums[i] == nums[i-1])
                     continue;
+
+                if (nums[i] > 0)
+                    break;
 
                 var j = i + 1;
                 var k = nums.Length - 1;
