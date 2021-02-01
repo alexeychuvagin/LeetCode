@@ -60,7 +60,7 @@ namespace LeetCode.Problems
                 return new List<IList<int>>(0);
 
             Array.Sort(nums);
-            var result = new Dictionary<int, IList<int>>();
+            var result = new List<IList<int>>();
 
             for (var i = 0; i < nums.Length - 2; i++)
             {
@@ -77,21 +77,34 @@ namespace LeetCode.Problems
                 {
                     var sum = nums[i] + nums[j] + nums[k];
 
-                    if (sum == 0)
+                    if (sum > 0)
                     {
-                        var key = HashCode.Combine(nums[i], nums[j], nums[k]);
-                        if (!result.ContainsKey(key))
-                            result.Add(key, new List<int>(3) {nums[i], nums[j], nums[k]});
-
-                        j++;
-                        k--;
+                        do
+                        {
+                            k--;
+                        } while (j < k && (k == nums.Length - 1 || nums[k] == nums[k + 1]));
                     }
-                    else if (sum < 0) j++;
-                    else k--;
+                    else
+                    {
+                        if (sum == 0)
+                        {
+                            result.Add(new List<int>(3) { nums[i], nums[j], nums[k] });
+
+                            do 
+                            {
+                                k--;
+                            } while (j < k && (k == nums.Length - 1 || nums[k] == nums[k + 1]));
+                        }
+
+                        do
+                        {
+                            j++;
+                        } while (j < k && nums[j] == nums[j - 1]);
+                    }
                 }
             }
 
-            return result.Values.ToList();
+            return result;
         }
     }
 }
