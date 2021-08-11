@@ -21,22 +21,29 @@ namespace LeetCode.Problems
                 new[] {-1, 0, 1, 2, -1, -4},
                 new[] {new[] {-1, -1, 2}, new[] {-1, 0, 1}}
             };
+            yield return new object[]
+            {
+                new[] {0, 0, 0, 0},
+                new[] {new[] {0, 0, 0}}
+            };
         }
 
         [Theory]
         [MemberData(nameof(TestCases))]
-        public void Test(int[] input, int[][] output)
+        public void Two_Pointers_Approach_Test(int[] input, int[][] output)
         {
-            var result = Solve(input)
+            var result = TwoPointersApproach(input)
                 .Select(x => x.ToArray())
                 .ToArray();
 
             Assert.Equal(output.Length, result.Length);
+
             output = output.Select(x =>
             {
                 Array.Sort(x);
                 return x;
             }).ToArray();
+
             result = result.Select(x =>
             {
                 Array.Sort(x);
@@ -54,52 +61,50 @@ namespace LeetCode.Problems
             }
         }
 
-        public IList<IList<int>> Solve(int[] nums)
+        private IList<IList<int>> TwoPointersApproach(int[] nums)
         {
             if (nums.Length < 3)
+            {
                 return new List<IList<int>>(0);
+            }
 
-            Array.Sort(nums);
             var result = new List<IList<int>>();
 
-            for (var i = 0; i < nums.Length - 2; i++)
+            Array.Sort(nums);
+
+            for (var left = 0; left < nums.Length - 2; left++)
             {
-                if (i > 0 && nums[i] == nums[i-1])
-                    continue;
-
-                if (nums[i] > 0)
-                    break;
-
-                var j = i + 1;
-                var k = nums.Length - 1;
-
-                while (j < k)
+                if (left > 0 && nums[left] == nums[left - 1])
                 {
-                    var sum = nums[i] + nums[j] + nums[k];
+                    continue;
+                }
 
-                    if (sum > 0)
+                var middle = left + 1;
+                var right = nums.Length - 1;
+
+                var requiredSum = 0 - nums[left];
+
+                while (middle < right)
+                {
+                    var currentResult = nums[middle] + nums[right];
+
+                    if (currentResult < requiredSum)
                     {
-                        do
-                        {
-                            k--;
-                        } while (j < k && (k == nums.Length - 1 || nums[k] == nums[k + 1]));
+                        middle++;
+                    }
+                    else if (currentResult > requiredSum)
+                    {
+                        right--;
                     }
                     else
                     {
-                        if (sum == 0)
-                        {
-                            result.Add(new List<int>(3) { nums[i], nums[j], nums[k] });
+                        result.Add(new List<int>() { nums[left], nums[middle], nums[right] });
+                        middle++;
 
-                            do 
-                            {
-                                k--;
-                            } while (j < k && (k == nums.Length - 1 || nums[k] == nums[k + 1]));
+                        while (middle < right && nums[middle] == nums[middle - 1])
+                        {
+                            middle++;
                         }
-
-                        do
-                        {
-                            j++;
-                        } while (j < k && nums[j] == nums[j - 1]);
                     }
                 }
             }
