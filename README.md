@@ -1,5 +1,5 @@
 # LeetCode.Problems
-![](https://shields.io/badge/language-csharp-blueviolet.svg)
+![](https://shields.io/badge/language-csharp-brightgreen.svg)
 
 Repository for solving LeetCode problems using C#.
 
