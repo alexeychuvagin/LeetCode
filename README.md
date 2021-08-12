@@ -1,9 +1,7 @@
 # LeetCode.Problems
-![](https://shields.io/badge/language-csharp-orange.svg)
+![](https://shields.io/badge/language-csharp-blueviolet.svg)
 
-The repository for solving problems from LeetCode.com
-
-Repository for solving LeetCode problems using Swift.
+Repository for solving LeetCode problems using C#.
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
