@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Tests
 {
     /// <summary>
     /// Implement atoi which converts a string to an integer.

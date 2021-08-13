@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Tests
 {
     /// <summary>
     /// Determine whether an integer is a palindrome.

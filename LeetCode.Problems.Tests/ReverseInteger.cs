@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Tests
 {
     /// <summary>
     /// Given a 32-bit signed integer, reverse digits of an integer.

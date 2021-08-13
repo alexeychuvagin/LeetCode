@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 using Xunit;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Tests
 {
     /// <summary>
     /// The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: 

@@ -2,7 +2,7 @@
 using System.Text;
 using Xunit;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Tests
 {
     /// <summary>
     /// You are given two non-empty linked lists representing two non-negative integers. 

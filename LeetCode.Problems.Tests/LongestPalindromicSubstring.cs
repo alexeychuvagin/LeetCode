@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Tests
 {
     /// <summary>
     /// Given a string s, find the longest palindromic substring in s. 

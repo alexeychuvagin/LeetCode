@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Tests
 {
     /// <summary>
     /// There are two sorted arrays nums1 and nums2 of size m and n respectively.
