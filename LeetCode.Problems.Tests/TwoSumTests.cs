@@ -2,12 +2,6 @@ using Xunit;
 
 namespace LeetCode.Problems.Tests;
 
-/// <summary>
-/// Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-/// You may assume that each input would have exactly one solution, and you may not use the same element twice.
-/// </summary>
-/// <remarks>Easy</remarks>
-/// <seealso cref="https://leetcode.com/problems/two-sum/"/>
 public sealed class TwoSumTests
 {
     [Theory]
