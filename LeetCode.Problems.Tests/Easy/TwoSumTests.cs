@@ -1,6 +1,7 @@
+using LeetCode.Problems.Easy;
 using Xunit;
 
-namespace LeetCode.Problems.Tests;
+namespace LeetCode.Problems.Tests.Easy;
 
 public sealed class TwoSumTests
 {
