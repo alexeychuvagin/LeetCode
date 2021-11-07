@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy;
+﻿using System.Collections.Generic;
+
+namespace LeetCode.Problems.Easy;
 
 /// <summary>
 /// Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.

@@ -1,4 +1,7 @@
-﻿namespace LeetCode.Problems.Easy;
+﻿using System;
+using System.Collections.Generic;
+
+namespace LeetCode.Problems.Easy;
 
 /// <summary>
 /// Given an array of integers, return indices of the two numbers such that they add up to a specific target.

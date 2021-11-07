@@ -1,4 +1,7 @@
-﻿namespace LeetCode.Problems;
+﻿using System;
+using System.Collections.Generic;
+
+namespace LeetCode.Problems.Medium;
 
 /// <summary>
 /// Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0?

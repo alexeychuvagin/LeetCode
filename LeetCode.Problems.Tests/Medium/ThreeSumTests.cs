@@ -1,6 +1,10 @@
-﻿using Xunit;
+﻿using LeetCode.Problems.Medium;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Xunit;
 
-namespace LeetCode.Problems.Tests;
+namespace LeetCode.Problems.Tests.Medium;
 
 public sealed class ThreeSumTests
 {
