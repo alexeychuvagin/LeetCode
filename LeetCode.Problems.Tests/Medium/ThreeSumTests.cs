@@ -12,13 +12,13 @@ public sealed class ThreeSumTests
     {
         yield return new object[]
         {
-                new[] {-1, 0, 1, 2, -1, -4},
-                new[] {new[] {-1, -1, 2}, new[] {-1, 0, 1}}
+            new[] {-1, 0, 1, 2, -1, -4},
+            new[] {new[] {-1, -1, 2}, new[] {-1, 0, 1}}
         };
         yield return new object[]
         {
-                new[] {0, 0, 0, 0},
-                new[] {new[] {0, 0, 0}}
+            new[] {0, 0, 0, 0},
+            new[] {new[] {0, 0, 0}}
         };
     }
 
