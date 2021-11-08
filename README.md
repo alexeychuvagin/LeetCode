@@ -9,3 +9,4 @@ Repository for solving LeetCode problems using C#.
 |2|[Three Sum](https://leetcode.com/problems/3sum/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/ThreeSum.cs)|Medium|
 |3|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/ValidParentheses.cs)|Easy|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/MultiplyStrings.cs)|Medium|
+|96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/UniqueBinarySearchTrees.cs)|Medium|
