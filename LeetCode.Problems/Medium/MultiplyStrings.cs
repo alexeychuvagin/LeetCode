@@ -13,7 +13,7 @@ namespace LeetCode.Problems.Medium;
 public static class MultiplyStrings
 {
     /// <summary>
-    /// Complexity 0(n*m)
+    /// Complexity O(n*m)
     /// </summary>
     public static string Multiply(string num1, string num2)
     {
