@@ -21,35 +21,28 @@ public static class GenerateParentheses
         public static IList<string> Solution(int n)
         {
             var result = new List<string>();
-            GenerateAll(Array.Empty<char>(), 0, n * 2, result);
+            GenerateAll(string.Empty, 0, n * 2, result);
 
             return result;
         }
 
-        private static void GenerateAll(IList<char> current, int pos, int lenght, IList<string> result)
+        private static void GenerateAll(string current, int pos, int lenght, IList<string> result)
         {
             if (pos == lenght)
             {
                 if (IsValid(current))
                 {
-                    result.Add(new string(current.ToArray()));
+                    result.Add(current);
                 }
             }
             else
             {
-                var first = new List<char>(current);
-                first.Add('(');
-                
-                GenerateAll(first, pos + 1, lenght, result);
-
-                var second = new List<char>(current);
-                second.Add(')');
-
-                GenerateAll(second, pos + 1, lenght, result);
+                GenerateAll(current + "(", pos + 1, lenght, result);
+                GenerateAll(current + ")", pos + 1, lenght, result);
             }
         }
 
-        private static bool IsValid(IList<char> current)
+        private static bool IsValid(string current)
         {
             int balance = 0;
 
@@ -94,12 +87,12 @@ public static class GenerateParentheses
 
             if (opened < max)
             {
-                Backtrack(result, result + "(", opened + 1, closed, max);
+                Backtrack(result, current + "(", opened + 1, closed, max);
             }
 
             if (closed < opened)
             {
-                Backtrack(result, result + ")", opened, closed + 1, max);
+                Backtrack(result, current + ")", opened, closed + 1, max);
             }
         }
     }
