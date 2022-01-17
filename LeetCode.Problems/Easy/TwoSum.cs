@@ -47,14 +47,14 @@ public static class TwoSum
 
         for (int i = 0; i < nums.Length; i++)
         {
-            dict.Add(nums[i], i);
+            dict[nums[i]] = i;
         }
 
         for (int i = 0; i < nums.Length; i++)
         {
             var complement = target - nums[i];
 
-            if (dict.TryGetValue(complement, out var index))
+            if (dict.TryGetValue(complement, out var index) && index != i)
             {
                 return new int[] { i, index };
             }
@@ -80,7 +80,7 @@ public static class TwoSum
                 return new int[] { i, index };
             }
 
-            dict.Add(nums[i], i);
+            dict[nums[i]] = i;
         }
 
         return Array.Empty<int>();
