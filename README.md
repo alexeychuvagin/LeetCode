@@ -12,4 +12,4 @@ Repository for solving LeetCode problems using C#.
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/GenerateParentheses.cs)|Medium|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/MultiplyStrings.cs)|Medium|
 |96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/UniqueBinarySearchTrees.cs)|Medium|
-|290|[Word Pattern](https://leetcode.com/problems/word-pattern/|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/WordPattern.cs)|Easy|
+|290|[Word Pattern](https://leetcode.com/problems/word-pattern/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/WordPattern.cs)|Easy|
