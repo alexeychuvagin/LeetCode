@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using FluentAssertions;
+﻿using FluentAssertions;
 using LeetCode.Problems.Medium;
+using System.Collections.Generic;
 using Xunit;
 
 namespace LeetCode.Problems.Tests.Medium;
