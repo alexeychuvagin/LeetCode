@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace LeetCode.Problems.Medium;
 
 /// <summary>
-/// Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+/// 22. Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 /// </summary>
 /// <remarks>Medium</remarks>
 /// <seealso cref="https://leetcode.com/problems/generate-parentheses/"/>
@@ -117,7 +115,7 @@ public static class GenerateParentheses
                         {
                             result.Add("(" + left + ")" + right);
                         }
-                    } 
+                    }
                 }
             }
 

@@ -1,7 +1,7 @@
 ﻿namespace LeetCode.Problems.Medium;
 
 /// <summary>
-/// Given the head of a linked list, remove the nth node from the end of the list and return its head.
+/// 19. Given the head of a linked list, remove the nth node from the end of the list and return its head.
 /// </summary>
 /// <remarks>Medium</remarks>
 /// <seealso cref="https://leetcode.com/problems/remove-nth-node-from-end-of-list/"/>
@@ -31,7 +31,8 @@ public static class RemoveNthNodeFromEndOfList
         var lenght = 0;
         var curNode = head;
 
-        while (curNode is not null) {
+        while (curNode is not null)
+        {
             lenght++;
             curNode = curNode.next;
         }

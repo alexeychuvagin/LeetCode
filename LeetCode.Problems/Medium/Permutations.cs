@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace LeetCode.Problems.Medium;
 
@@ -23,9 +22,7 @@ public sealed class Permutations
 
         if (queue.Count == 1)
         {
-            var num = queue.Dequeue();
-            result.Add(new List<int> { num });
-            queue.Enqueue(num);
+            result.Add(new List<int> { queue.Peek() });
             return result;
         }
 

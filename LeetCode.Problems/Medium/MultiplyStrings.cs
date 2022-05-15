@@ -3,7 +3,7 @@
 namespace LeetCode.Problems.Medium;
 
 /// <summary>
-/// Given two non-negative integers num1 and num2 represented as strings, 
+/// 43. Given two non-negative integers num1 and num2 represented as strings, 
 /// return the product of num1 and num2, also represented as a string.
 /// Note: You must not use any built-in BigInteger library or convert 
 /// the inputs to integer directly.
@@ -27,7 +27,7 @@ public static class MultiplyStrings
         for (var pointer1 = num1.Length - 1; pointer1 >= 0; pointer1--)
         {
             var value1 = (int)char.GetNumericValue(num1[pointer1]);
-            
+
             for (var pointer2 = num2.Length - 1; pointer2 >= 0; pointer2--)
             {
                 var position = pointer1 + pointer2 + 1;
