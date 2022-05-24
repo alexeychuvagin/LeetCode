@@ -18,9 +18,9 @@ namespace LeetCode.Problems.Medium;
 /// <seealso cref="https://leetcode.com/problems/letter-combinations-of-a-phone-number/"/>
 public static class LettersCombinationOfAPhoneNumber
 {
-    private static readonly IReadOnlyDictionary<char, string> Map
-    = new Dictionary<char, string>()
-    {
+    private static readonly IReadOnlyDictionary<char, string> Map 
+        = new Dictionary<char, string>() 
+        {
             { '2', "abc" },
             { '3', "def" },
             { '4', "ghi" },
@@ -29,7 +29,7 @@ public static class LettersCombinationOfAPhoneNumber
             { '7', "pqrs" },
             { '8', "tuv" },
             { '9', "wxyz" }
-    };
+        };
 
     public static IList<string> LetterCombinations(string digits)
     {

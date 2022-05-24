@@ -9,6 +9,7 @@ Repository for solving LeetCode problems using C#.
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/AddTwoNumbers.cs)|Medium|
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/LengthOfLongestSubstring.cs)|Medium|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/ContainerWithMostWater.cs)|Medium|
+|14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/LongestCommonPrefix.cs)|Easy|
 |15|[Three Sum](https://leetcode.com/problems/3sum/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/ThreeSum.cs)|Medium|
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/LettersCombinationOfAPhoneNumber.cs)|Medium|
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/RemoveNthNodeFromEndOfList.cs)|Medium|
