@@ -10,13 +10,13 @@ namespace LeetCode.Problems.Medium;
 /// </summary>
 /// <remarks>Medium</remarks>
 /// <seealso cref="https://leetcode.com/problems/add-two-numbers/"/>
-public class AddTwoNumbers
+public static class AddTwoNumbers
 {
     public class ListNode
     {
         public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
+        public ListNode? next;
+        public ListNode(int val = 0, ListNode? next = null)
         {
             this.val = val;
             this.next = next;
@@ -36,7 +36,7 @@ public class AddTwoNumbers
         }
     }
 
-    public ListNode Solution(ListNode l1, ListNode l2)
+    public static ListNode Solution(ListNode l1, ListNode l2)
     {
         var head = new ListNode();
         var currentNode = head;
