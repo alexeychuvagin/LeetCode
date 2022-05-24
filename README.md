@@ -14,6 +14,7 @@ Repository for solving LeetCode problems using C#.
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/PalindromeNumber.cs)|Easy|
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Hard/RegularExpressionMatching.cs)|Hard|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/ContainerWithMostWater.cs)|Medium|
+|13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/RomanToInteger.cs)|Easy|
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/LongestCommonPrefix.cs)|Easy|
 |15|[Three Sum](https://leetcode.com/problems/3sum/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/ThreeSum.cs)|Medium|
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/LettersCombinationOfAPhoneNumber.cs)|Medium|
