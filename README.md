@@ -11,9 +11,7 @@ Repository for solving LeetCode problems using C#.
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Hard/MedianOfTwoSortedArrays.cs)|Hard|
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/LongestPalindromicSubstring.cs)|Medium|
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/ReverseInteger.cs)|Medium|
-
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/StringToInteger.cs)|Medium|
-
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/PalindromeNumber.cs)|Easy|
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Hard/RegularExpressionMatching.cs)|Hard|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/ContainerWithMostWater.cs)|Medium|
