@@ -1,7 +1,7 @@
 ﻿using Xunit;
-using static LeetCode.Problems.Easy.ReverseInteger;
+using static LeetCode.Problems.Medium.ReverseInteger;
 
-namespace LeetCode.Problems.Tests.Easy;
+namespace LeetCode.Problems.Tests.Medium;
 
 public sealed class ReverseIntegerTests
 {
