@@ -1,7 +1,7 @@
 ﻿using Xunit;
 using static LeetCode.Problems.Medium.LengthOfLongestSubstring;
 
-namespace LeetCode.Problems.Tests
+namespace LeetCode.Problems.Tests.Medium
 {
     public sealed class LengthOfLongestSubstringTests
     {
@@ -19,6 +19,6 @@ namespace LeetCode.Problems.Tests
         {
             Assert.Equal(output, Solution(input));
             Assert.Equal(output, Solution2(input));
-        }    
+        }
     }
 }
