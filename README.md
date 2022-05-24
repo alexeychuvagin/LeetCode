@@ -18,6 +18,7 @@ Repository for solving LeetCode problems using C#.
 |13|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/RomanToInteger.cs)|Easy|
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/LongestCommonPrefix.cs)|Easy|
 |15|[Three Sum](https://leetcode.com/problems/3sum/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/ThreeSum.cs)|Medium|
+|16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/ThreeSumClosest.cs)|Medium|
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/LettersCombinationOfAPhoneNumber.cs)|Medium|
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Medium/RemoveNthNodeFromEndOfList.cs)|Medium|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[C#](https://github.com/alexeychuvagin/LeetCode/blob/master/LeetCode.Problems/Easy/ValidParentheses.cs)|Easy|
