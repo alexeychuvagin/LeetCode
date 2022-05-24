@@ -4,7 +4,8 @@ using System.Collections.Generic;
 namespace LeetCode.Problems.Medium;
 
 /// <summary>
-/// 22. Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+/// 22. Generate Parentheses
+/// Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 /// </summary>
 /// <remarks>Medium</remarks>
 /// <seealso cref="https://leetcode.com/problems/generate-parentheses/"/>

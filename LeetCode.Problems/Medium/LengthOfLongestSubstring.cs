@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace LeetCode.Problems.Medium;
 
 /// <summary>
+/// 3. Longest Substring Without Repeating Characters
 /// Given a string, find the length of the longest substring without repeating characters.
 /// </summary>
 /// <remarks>Medium</remarks>
