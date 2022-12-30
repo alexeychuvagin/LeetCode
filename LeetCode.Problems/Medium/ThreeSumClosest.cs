@@ -9,7 +9,7 @@ namespace LeetCode.Problems.Medium;
 /// You may assume that each input would have exactly one solution.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/3sum-closest/"/>
+/// <seealso href="https://leetcode.com/problems/3sum-closest/"/>
 public static class ThreeSumClosest
 {
     public static int Solution(int[] nums, int target)

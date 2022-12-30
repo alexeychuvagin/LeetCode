@@ -5,7 +5,7 @@
 /// Given the head of a linked list, remove the nth node from the end of the list and return its head.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/remove-nth-node-from-end-of-list/"/>
+/// <seealso href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/"/>
 public static class RemoveNthNodeFromEndOfList
 {
     public class ListNode

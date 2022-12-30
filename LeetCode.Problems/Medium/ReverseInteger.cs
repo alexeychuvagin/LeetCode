@@ -7,7 +7,7 @@
 /// [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/reverse-integer/"/>
+/// <seealso href="https://leetcode.com/problems/reverse-integer/"/>
 public static class ReverseInteger
 {
     public static int Reverse(int x)

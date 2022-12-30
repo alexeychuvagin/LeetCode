@@ -9,7 +9,7 @@ namespace LeetCode.Problems.Easy;
 /// Follow up: Could you solve it without converting the integer to a string?
 /// </summary>
 /// <remarks>Easy</remarks>
-/// <seealso cref="https://leetcode.com/problems/palindrome-number/"/>
+/// <seealso href="https://leetcode.com/problems/palindrome-number/"/>
 public static class PalindromeNumber
 {
     public static bool IsPalindrome(int x)

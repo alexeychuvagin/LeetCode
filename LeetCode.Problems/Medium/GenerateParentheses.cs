@@ -8,7 +8,7 @@ namespace LeetCode.Problems.Medium;
 /// Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/generate-parentheses/"/>
+/// <seealso href="https://leetcode.com/problems/generate-parentheses/"/>
 public static class GenerateParentheses
 {
     /// <summary>

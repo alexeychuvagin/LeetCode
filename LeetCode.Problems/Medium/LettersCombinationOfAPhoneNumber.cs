@@ -16,7 +16,7 @@ namespace LeetCode.Problems.Medium;
 /// pqrs tuv wxyx
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/letter-combinations-of-a-phone-number/"/>
+/// <seealso href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/"/>
 public static class LettersCombinationOfAPhoneNumber
 {
     private static readonly IReadOnlyDictionary<char, string> Map 

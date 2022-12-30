@@ -9,7 +9,7 @@ namespace LeetCode.Problems.Easy;
 /// If there is no common prefix, return an empty string "".
 /// </summary>
 /// <remarks>Easy</remarks>
-/// <seealso cref="https://leetcode.com/problems/longest-common-prefix/"/>
+/// <seealso href="https://leetcode.com/problems/longest-common-prefix/"/>
 public static class LongestCommonPrefix
 {
     /// <summary>

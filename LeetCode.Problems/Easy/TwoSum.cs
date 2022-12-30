@@ -9,7 +9,7 @@ namespace LeetCode.Problems.Easy;
 /// You may assume that each input would have exactly one solution, and you may not use the same element twice.
 /// </summary>
 /// <remarks>Easy</remarks>
-/// <seealso cref="https://leetcode.com/problems/two-sum/"/>
+/// <seealso href="https://leetcode.com/problems/two-sum/"/>
 public static class TwoSum
 {
     /// <summary>

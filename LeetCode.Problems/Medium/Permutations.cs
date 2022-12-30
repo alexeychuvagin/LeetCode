@@ -8,7 +8,7 @@ namespace LeetCode.Problems.Medium;
 /// You can return the answer in any order.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/permutations/"/>
+/// <seealso href="https://leetcode.com/problems/permutations/"/>
 public sealed class Permutations
 {
     public IList<IList<int>> Permute(int[] nums)

@@ -8,7 +8,7 @@ namespace LeetCode.Problems.Medium;
 /// Given a string, find the length of the longest substring without repeating characters.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/longest-substring-without-repeating-characters/"/>
+/// <seealso href="https://leetcode.com/problems/longest-substring-without-repeating-characters/"/>
 public static class LengthOfLongestSubstring
 {
     /// <summary>

@@ -10,7 +10,7 @@ namespace LeetCode.Problems.Medium;
 /// Notice that the solution set must not contain duplicate triplets.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/3sum/"/>
+/// <seealso href="https://leetcode.com/problems/3sum/"/>
 public static class ThreeSum
 {
     /// <summary>

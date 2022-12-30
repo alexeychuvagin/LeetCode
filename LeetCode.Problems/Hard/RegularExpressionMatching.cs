@@ -8,7 +8,7 @@
 /// The matching should cover the entire input string (not partial).
 /// </summary>
 /// <remarks>Hard</remarks>
-/// <seealso cref="https://leetcode.com/problems/regular-expression-matching/"/>
+/// <seealso href="https://leetcode.com/problems/regular-expression-matching/"/>
 public static class RegularExpressionMatching
 {
     public static bool IsMatch(string s, string p)

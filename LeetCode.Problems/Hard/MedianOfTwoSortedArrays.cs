@@ -9,7 +9,7 @@ namespace LeetCode.Problems.Hard;
 /// You may assume nums1 and nums2 cannot be both empty.
 /// </summary>
 /// <remarks>Hard</remarks>
-/// <seealso cref="https://leetcode.com/problems/median-of-two-sorted-arrays/"/>
+/// <seealso href="https://leetcode.com/problems/median-of-two-sorted-arrays/"/>
 public static class MedianOfTwoSortedArrays
 {
     /// <summary>

@@ -20,7 +20,7 @@ namespace LeetCode.Problems.Medium;
 /// 1 <= numRows <= 1000
 /// </remarks>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/zigzag-conversion/"/>
+/// <seealso href="https://leetcode.com/problems/zigzag-conversion/"/>
 public static class ZigZagConversion
 {
     public static string Convert(string s, int numRows)

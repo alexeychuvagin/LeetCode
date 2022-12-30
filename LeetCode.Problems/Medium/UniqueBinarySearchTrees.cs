@@ -6,8 +6,8 @@
 /// which has exactly n nodes of unique values from 1 to n.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/unique-binary-search-trees/"/>
-/// <seealso cref="https://www.baeldung.com/cs/get-number-of-binary-search-trees-n-distinct-elements" />
+/// <seealso href="https://leetcode.com/problems/unique-binary-search-trees/"/>
+/// <seealso href="https://www.baeldung.com/cs/get-number-of-binary-search-trees-n-distinct-elements" />
 public static class UniqueBinarySearchTrees
 {
     public static int RecursiveApproach(int n)

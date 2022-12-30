@@ -10,7 +10,7 @@ namespace LeetCode.Problems.Medium;
 /// the inputs to integer directly.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/multiply-strings/"/>
+/// <seealso href="https://leetcode.com/problems/multiply-strings/"/>
 public static class MultiplyStrings
 {
     /// <summary>

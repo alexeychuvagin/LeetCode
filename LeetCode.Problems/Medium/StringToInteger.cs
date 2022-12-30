@@ -11,7 +11,7 @@
 /// </summary>
 /// <remarks></remarks>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/string-to-integer-atoi/"/>
+/// <seealso href="https://leetcode.com/problems/string-to-integer-atoi/"/>
 public static class StringToInteger
 {
     public static int MyAtoi(string s)

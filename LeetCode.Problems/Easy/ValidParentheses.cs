@@ -10,7 +10,7 @@ namespace LeetCode.Problems.Easy;
 /// - Open brackets must be closed in the correct order.
 /// </summary>
 /// <remarks>Easy</remarks>
-/// <seealso cref="https://leetcode.com/problems/valid-parentheses/"/>
+/// <seealso href="https://leetcode.com/problems/valid-parentheses/"/>
 public static class ValidParentheses
 {
     /// <summary>

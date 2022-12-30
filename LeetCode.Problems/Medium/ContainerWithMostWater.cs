@@ -9,7 +9,7 @@ namespace LeetCode.Problems.Medium;
 /// Notice that you may not slant the container.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/container-with-most-water/"/>
+/// <seealso href="https://leetcode.com/problems/container-with-most-water/"/>
 public sealed class ContainerWithMostWater
 {
     public static int MaxArea(int[] height)

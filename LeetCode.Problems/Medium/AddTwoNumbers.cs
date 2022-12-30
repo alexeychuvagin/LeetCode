@@ -10,7 +10,7 @@ namespace LeetCode.Problems.Medium;
 /// You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 /// </summary>
 /// <remarks>Medium</remarks>
-/// <seealso cref="https://leetcode.com/problems/add-two-numbers/"/>
+/// <seealso href="https://leetcode.com/problems/add-two-numbers/"/>
 public static class AddTwoNumbers
 {
     public class ListNode

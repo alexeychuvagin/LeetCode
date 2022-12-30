@@ -9,7 +9,7 @@ namespace LeetCode.Problems.Easy;
 /// Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
 /// </summary>
 /// <remarks>Easy</remarks>
-/// <seealso cref="https://leetcode.com/problems/word-pattern/"/>
+/// <seealso href="https://leetcode.com/problems/word-pattern/"/>
 public static class WordPattern
 {
     /// <summary>
